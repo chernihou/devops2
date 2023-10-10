@@ -11,7 +11,7 @@ services:
       - spring.jpa.hibernate.ddl-auto=update
       - spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     depends_on:
-      -mysql
+      - mysql
   mysql:
     image: mysql:5.7
     restart: always
