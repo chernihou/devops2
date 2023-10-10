@@ -11,7 +11,7 @@ pipeline{
     }
     stage ("Clone repo"){
       steps {
-        sh "https://github.com/chernihou/devops2.git"
+        sh "git clone https://github.com/chernihou/devops2.git"
       }
     }
     stage ("Generate backend image"){
