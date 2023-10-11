@@ -2,7 +2,7 @@ services:
   spring-boot-app:
     image: devops2
     ports:
-      - "0.0.0.0:8091:8091"
+      - "8091:8091"
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/api_etudiant
       - SPRING_DATASOURCE_USERNAME=root
@@ -19,7 +19,7 @@ services:
       MYSQL_ROOT_USERNAME: 'root'
       MYSQL_ROOT_PASSWORD: 'root'
     ports:
-      - '0.0.0.0:3306:3306'
+      - "3306:3306"
     volumes:
       - api_etudiant:/var/lib/mysql
 volumes:
