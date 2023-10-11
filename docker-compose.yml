@@ -2,10 +2,9 @@ services:
   spring-boot-app:
     image: devops2
     ports:
-      - '0.0.0.0:8091:8091'
+      - "0.0.0.0:8091:8091"
     environment:
-      - server.port=8091
-      - spring.datasource.url=jdbc:mysql://localhost:3306/api_etudiant
+      - spring.datasource.url=jdbc:mysql://mysql:3306/api_etudiant
       - spring.datasource.username=root
       - spring.datasource.password=root
       - spring.jpa.hibernate.ddl-auto=update
